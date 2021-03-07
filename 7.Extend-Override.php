@@ -30,11 +30,8 @@ class Customer extends User
 $u = new User;
 $u->firstName = 'User';
 $u->lastName = 'Marij';
-// $u->city = 'Bontang';
-// $u->country = 'Indonesia';
 
 echo $u->fullName() . "<br />";
-// echo $c->location() . "<br />";
 
 $c = new Customer;
 $c->firstName = 'Customer';
