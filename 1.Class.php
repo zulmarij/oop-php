@@ -2,7 +2,6 @@
 
 class Student
 {
-    
 }
 
 $classes = get_declared_classes();
