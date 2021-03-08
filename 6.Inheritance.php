@@ -11,18 +11,18 @@ class User
     }
 }
 
-class Costumer extends User
+class Customer extends User
 {
 }
 
-$c = new Costumer;
+$c = new Customer;
 $c->firstName = 'Customer';
 $c->lastName = 'Zul';
 
 echo $c->fullName() . "<br />";
 
 if (is_subclass_of($c, 'User')) {
-    echo "Istance Costumer merupakan subclass Class User <br />";
+    echo "Istance Customer merupakan subclass Class User <br />";
 }
 
 $parents = class_parents($c);
