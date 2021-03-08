@@ -36,7 +36,7 @@ echo PartTimeStudent::$grade[1] . "<br />";
 echo PartTimeStudent::motto() . "<br />";
 
 PartTimeStudent::$grade[] = 'alumni';
-echo implode(', ' , Student::$grade) . "<br />";
+echo implode(', ', Student::$grade) . "<br />";
 
 Student::addStudent();
 Student::addStudent();
