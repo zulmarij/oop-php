@@ -27,3 +27,20 @@ echo Student::motto() . "<br />";
 echo Student::count() . "<br />";
 Student::addStudent();
 echo Student::count() . "<br />";
+
+class PartTimeStudent extends Student
+{
+}
+
+echo PartTimeStudent::$grade[1] . "<br />";
+echo PartTimeStudent::motto() . "<br />";
+
+PartTimeStudent::$grade[] = 'alumni';
+echo implode(', ' , Student::$grade) . "<br />";
+
+Student::addStudent();
+Student::addStudent();
+PartTimeStudent::addStudent();
+
+echo Student::count() . "<br />";
+echo PartTimeStudent::count() . "<br />";
