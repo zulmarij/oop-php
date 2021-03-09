@@ -3,7 +3,7 @@
 function myAutoload($class)
 {
     if (preg_match('/\A\w+\Z/', $class)) {
-        include 'classes/' . $class . ".php";
+        include 'autoload/' . $class . ".php";
     }
 }
 
