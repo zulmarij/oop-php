@@ -1,6 +1,6 @@
 <?php
 
-$array = [1,2,3,4,5,6,7,8,9];
+$array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 $even = array_filter($array, function ($item) {
     return ($item % 2 == 0);
